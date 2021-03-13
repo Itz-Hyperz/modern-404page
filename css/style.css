@@ -1,0 +1,134 @@
+.body {
+    margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #081449;
+  }
+  
+  .navbar {
+      display: flex;
+      width: 80%;
+      padding: 2vh 10%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 5;
+      transition: all .5s ease;
+  }
+  
+  .navbar.scrolled {
+      padding: 1vh 10%;
+      background-color: #0c151c;
+  }
+  
+  .navbar.dropdownshown {
+      padding: 2vh 10%;
+      background-color: transparent;
+  }
+  
+  .navbar .left {
+      width: 25%;
+  }
+  
+  .navbar .left img {
+      height: 7.5vh;
+      width: auto;
+      opacity: 1;
+      transition: visibility .25s ease, opacity .25s ease;
+  }
+  
+  .navbar.dropdownshown .left img {
+      visibility: hidden;
+      opacity: 0;
+  }
+  
+  .navbar .right {
+      width: 75%;
+      text-align: right;
+  }
+  
+  .navbar .right a {
+      font-size: 2.2vh;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 2%;
+      position: relative;
+  }
+  
+  .navbar .right a.dropdownbtn {
+      display: none;
+      font-size: 3vh;
+  }
+  
+  .navbar .right .links a:after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 0%;
+      height: .25vh;
+      background-color: #fff;
+      margin-top: .5vh;
+      transition: width .3s ease;
+  }
+  
+  .navbar .right .links a:hover:after, .navbar .right .links a.active:after {
+      width: 100%;
+  }
+
+  .body .below {
+      height: 475px;
+      width: 825px;
+      background-color: #030b30;
+      margin-top: 120px;
+      margin-left: 515px;
+      margin-right: auto;
+      border-radius: 5px;
+  }
+
+  .body .below .maintext {
+      color: white;
+      font-weight: bold;
+      font-size: 48px;
+      letter-spacing: 1px;
+      padding-top: 90px;
+      transition: color .5s;
+  }
+
+  .body .below .maintext:hover {
+    color: #007ee6;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 1px;
+    padding-top: 90px;
+}
+
+  .body .below .maintext2 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding-top: 1px;
+}
+
+.body .below .returnhomebuttona {
+    color: white;
+    font-size: 26px;
+    padding-top: 20px;
+    transition: font-size .2s, font-weight .2s, stroke .2s;
+}
+
+.body .below .returnhomebuttona:hover {
+    color: white;
+    font-size: 28px;
+    stroke: black;
+}
+
+.body .below .copyright {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 120px;
+    font-weight: bold;
+}
